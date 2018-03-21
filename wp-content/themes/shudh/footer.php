@@ -89,32 +89,34 @@
             <div class="clear"></div>
         </div>
         </div>-->
-        <div class="copyright-wrapper">
-        	<div class="container">
-              	 <div class="social-icons">
-					         <?php if ( get_theme_mod('fb_link') !== "") { ?>
-                    <a title="facebook" class="fb" target="_blank" href="<?php echo esc_url(get_theme_mod('fb_link','#facebook')); ?>"></a>
-                    <?php } ?>
+        <footer>
+          <div class="copyright-wrapper">
+          	<div class="container">
+                	 <div class="social-icons">
+  					         <?php if ( get_theme_mod('fb_link') !== "") { ?>
+                      <a title="facebook" class="fb" target="_blank" href="<?php echo esc_url(get_theme_mod('fb_link','#facebook')); ?>"></a>
+                      <?php } ?>
 
-                    <?php if ( get_theme_mod('twitt_link') !== "") { ?>
-                    <a title="twitter" class="tw" target="_blank" href="<?php echo esc_url(get_theme_mod('twitt_link','#twitter')); ?>"></a>
-                    <?php } ?>
+                      <?php if ( get_theme_mod('twitt_link') !== "") { ?>
+                      <a title="twitter" class="tw" target="_blank" href="<?php echo esc_url(get_theme_mod('twitt_link','#twitter')); ?>"></a>
+                      <?php } ?>
 
-                    <?php if ( get_theme_mod('gplus_link') !== "") { ?>
-                    <a title="google-plus" class="gp" target="_blank" href="<?php echo esc_url(get_theme_mod('gplus_link','#gplus')); ?>"></a>
-                    <?php } ?>
+                      <?php if ( get_theme_mod('gplus_link') !== "") { ?>
+                      <a title="google-plus" class="gp" target="_blank" href="<?php echo esc_url(get_theme_mod('gplus_link','#gplus')); ?>"></a>
+                      <?php } ?>
 
-                    <?php if ( get_theme_mod('linked_link') !== "") { ?>
-                    <a title="linkedin" class="in" target="_blank" href="<?php echo esc_url(get_theme_mod('linked_link','#linkedin')); ?>"></a>
-                    <?php } ?>
-                 </div>
+                      <?php if ( get_theme_mod('linked_link') !== "") { ?>
+                      <a title="linkedin" class="in" target="_blank" href="<?php echo esc_url(get_theme_mod('linked_link','#linkedin')); ?>"></a>
+                      <?php } ?>
+                   </div>
 
 
-                <div class="copyright-txt"><?php esc_attr_e('Copyright &copy; 2016','shudh');?> <?php bloginfo('name'); ?>. <?php esc_attr_e('All Rights Reserved', 'shudh');?></div>
-                <div class="design-by">Design by <a rel="nofollow" target="_blank" href="http://www.intuyes.com/">Intuyes</a></div>
-            </div>
-            <div class="clear"></div>
-        </div>
+                  <div class="copyright-txt"><?php esc_attr_e('Copyright &copy; 2016','shudh');?> <?php bloginfo('name'); ?>. <?php esc_attr_e('All Rights Reserved', 'shudh');?></div>
+                  <div class="design-by">Design by <a rel="nofollow" target="_blank" href="http://www.intuyes.com/">Intuyes</a></div>
+              </div>
+              <div class="clear"></div>
+          </div>
+        </footer>
     </div>
 <?php wp_footer(); ?>
 

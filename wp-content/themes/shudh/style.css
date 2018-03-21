@@ -64,7 +64,7 @@ ol.comment-list li{ list-style:none; margin-bottom:5px;}
 	text-align: center;
     float: left;
     width: 100%;}
-.sitenav ul { float:none; margin:0; padding:0; font-family:'Caveat', sans-serif; font-weight:400; font-size:22px;}
+.sitenav ul { float:none; margin:0; padding:0; font-family:'Caveat', sans-serif; font-weight:400; font-size:28px;}
 .sitenav ul li{ display:inline-block; margin:0; position:relative; text-align:center;}
 .sitenav ul li a{ padding:0 15px; display:block; color:#fff; line-height: 150px;}
 .sitenav ul li a:hover{ color:#f2f2f2 !important;}
@@ -95,7 +95,7 @@ ol.comment-list li{ list-style:none; margin-bottom:5px;}
 }
 .home_slider_main .nivo-caption p {
 	color: #fff;
-	font: 300 16px 'Open Sans';
+	font: 300 20px 'Open Sans';
 }
 .home_slider_main .gradient {
 	background: linear-gradient(rgba(128,60,13,.6) 99%,#803C0D);
@@ -132,11 +132,11 @@ section#home_slider{ padding:0;}
 h2.section-title {color:#454545; font:400 28px/32px 'Caveat',san-serif; text-align: center; border-bottom:1px solid #eee; padding-bottom:20px; margin:0 auto 40px; display:table; }
 
 /*services section css*/
-#pagearea{ background-color:#fff; padding:50px 0; color:#343434;}
+#pagearea{padding:50px 0; color:#343434;}
 .serviceswrap{ width:100%; position:relative;}
 .serviceswrap .threebox{ width:22.7%; height: auto; float:left; margin:0 3% 0 0; border-radius:5px; overflow:hidden; position:relative; background:#ff8a00;}
 .serviceswrap .threebox img{width:100%; height:auto; min-height:335px; margin:0; vertical-align:top;}
-.serviceswrap .threebox h3{color:#fff; text-transform:uppercase; font:700 14px/24px 'Caveat', serif;}
+.serviceswrap .threebox h3{color:#fff; font:700 14px/24px 'Caveat', serif;}
 .serviceswrap .threebox .ReadMore { display: inline-block; background:#fff; text-transform:uppercase; padding:0 15px; color:#ff8a00; font:700 12px/36px 'Caveat';}
 .serviceswrap .threebox .page-thumbbx { width:100%; height:335px; margin:0; overflow:hidden;}
 .threebox-content {display:none;}
@@ -220,7 +220,7 @@ div.recent-post a:hover { text-decoration:none; color:#ff8a00;}
 div.recent-post:last-child { border-bottom:0; padding-bottom:0; margin-bottom:0;}
 div.recent-post p{ line-height:16px; margin:0;}
 
-.copyright-wrapper {  background-color:#151515; color:#4e4e4e; position:relative; padding:30px 0; text-align:center;}
+.copyright-wrapper {  background-color:#646464; color:#9BA0A5; position:relative; padding:30px 0; text-align:center; font: 300 14px 'Open Sans' !important;}
 .design-by{ margin-top:6px;}
 .design-by a{color:#bbbaba;}
 .design-by a:hover{color:#ff8a00;}
@@ -362,6 +362,83 @@ body.wp-custom-logo .logo h1{display:none;}
 
 body.home h2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: 700;
+}
+body.home .section-home {
+	background-image: url(images/home-dyarli.jpg);
+}
+body.home .int-cate{
+	overflow: unset;
+}
+body.home .int-cate h3{
+	position: absolute;
+	font: 300 16px 'Open Sans';
+	float: left;
+	width: 100%;
+	text-align: center;
+	top: -35px;
+	color: #803C0D;
+}
+.home-d1 h2 {
+	color: #F7578E;
+}
+.menu-main_menu-container a:hover, .menu-main_menu-container a:focus, .current_page_item a {
+	color: #803C0D !important;
+}
+body.page .page_content, body.category .page_content, body.single .page_content {
+	margin-top: 50px;
+}
+.reserva {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 40px 0;
+}
+.reserva a {
+	background-color: #F7578E;
+	color: #fff;
+	font: 400 18px 'Open Sans';
+	width: 268px;
+	min-height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	transition: .2s;
+}
+.reserva a:hover {
+	background-color: #803C0D;
+}
+footer .social-icons a {
+	background-color: #9BA0A5 !important;
+	border-color: #9BA0A5;
+}
+.tortasycupcakes {
+	margin-bottom: 50px;
+}
+.tortasycupcakes span{
+	background-color: #F7578E;
+	color: #fff;
+	font-weight: 300 !important;
+	font-family: 'Open Sans';
+	padding: 0px 40px 8px;
+	font-size: 40px;
+}
+.tortasycupcakes strong {
+	font-weight: 700 !important;
+}
+h2.section-title {
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 100px;
+}
+h2.section-title .line-h {
+	height: 2px;
+	width: 100%;
+	background-color: #F7578E;
+	float: left;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
 }

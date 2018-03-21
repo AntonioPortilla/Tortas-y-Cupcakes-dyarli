@@ -143,33 +143,36 @@
 
 <?php if (is_front_page() || is_home()) { ?>
 <?php if( get_theme_mod( 'hide_pagefourboxes' ) == '') { ?>
-<div id="pagearea" class="homeeeeee">
+<section class="section-home">
+<div class="content-home">
+<div id="pagearea" class="home-d1">
 	<div class="container">
            <div class="serviceswrap">
             <?php if ( '' !== get_theme_mod( 'services_title' ) ){  ?>
-                <h2 class="section-title"><?php esc_html_e(get_theme_mod('services_title',__('Our Services','shudh'))); ?></h2>
+                <h2 class="section-title">
+                	<span><?php esc_html_e(get_theme_mod('services_title',__('Our Services','shudh'))); ?></span>
+                	<span class="line-h"></span>
+                </h2>
             <?php } ?>
 
             <?php for($fx=1; $fx<5; $fx++) { ?>
         	<?php if( get_theme_mod('page-column'.$fx,false) ) { ?>
         	<?php $queryvar = new wp_query('page_id='.get_theme_mod('page-column'.$fx,true));
 			while( $queryvar->have_posts() ) : $queryvar->the_post(); ?>
-        	    <div class="threebox <?php if($fx % 4 == 0) { echo "last_column"; } ?>">
-
-                  <div class="page-thumbbx">
-				  <?php if ( has_post_thumbnail() ) { ?>
-                        <?php the_post_thumbnail();?>
-                   <?php } else { ?>
-                       <img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/images/img_404.png" width="65" alt=""/>
-                   <?php } ?>
-                  </div>
-                 <div class="threebox-content">
-                  <h3><?php the_title(); ?></h3>
-                  <p><?php echo shudh_content(20); ?></p>
-                  <a class="ReadMore" href="<?php the_permalink(); ?>"><?php esc_html_e('Read More', 'shudh');?></a>
-                  </div>
-
-        	   </div>
+				<div class="int-cate threebox <?php if($fx % 4 == 0) { echo "last_column"; } ?>">
+					<h3><?php the_title(); ?></h3>
+					<div class="page-thumbbx">
+						<?php if ( has_post_thumbnail() ) { ?>
+						<?php the_post_thumbnail();?>
+						<?php } else { ?>
+						<img src="<?php echo esc_url( get_template_directory_uri() ) ; ?>/images/img_404.png" width="65" alt=""/>
+						<?php } ?>
+					</div>
+					<div class="threebox-content">
+						<p><?php echo shudh_content(20); ?></p>
+						<a class="ReadMore" href="<?php the_permalink(); ?>"><?php esc_html_e('Leer más', 'shudh');?></a>
+					</div>
+				</div>
              <?php endwhile;
 						wp_reset_query(); ?>
         <?php } else { ?>
@@ -194,7 +197,6 @@
  </div><!-- #pagearea -->
 <div class="clear"></div>
 <?php } ?>
-
 <?php if( get_theme_mod( 'hide_welcomesection' ) == '') { ?>
 <section id="wrapfirst">
             	<div class="container">

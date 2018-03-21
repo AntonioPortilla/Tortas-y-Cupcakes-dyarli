@@ -12,9 +12,11 @@
 
 get_header();
 ?>
-<div class="container">
+<div class="container homee2">
      <div class="page_content">
-     <h2 id="tortasycupcakes">Galería en Tortas y Cupcakes</h2>
+     <h2 class="tortasycupcakes">
+         <span>Tortas y <strong>Cupcakes</strong></span>
+     </h2>
         <!--<section class="site-main">
         	 <div class="blog-post">
 					<?php
@@ -47,7 +49,13 @@ get_header();
         <?php 
             if ( function_exists( 'envira_gallery' ) ) { envira_gallery( 'galeria-home', 'slug' ); }
         ?>
+        <div class="reserva">
+            <a href="<?php echo home_url() ?>/contactar/">¡Reserva tu pedido Aquí!</a>
+        </div>
         <div class="clear"></div>
     </div><!-- site-aligner -->
-</div><!-- content -->
+</div>
+</div>
+</section>
+
 <?php get_footer(); ?>
