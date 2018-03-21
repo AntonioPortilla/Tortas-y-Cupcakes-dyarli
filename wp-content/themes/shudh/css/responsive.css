@@ -85,3 +85,10 @@ h2.section_title{ text-align:center;}
 .sitenav ul li:hover ul li ul, .sitenav ul li:hover ul li:hover > ul, .sitenav ul li:hover ul li:hover > ul li ul{  background: transparent !important; display:block; position:relative !important;  right:0; left:0; top:0;}
 .sitenav ul li:hover ul li:hover ul, .sitenav ul li:hover ul li:hover ul li:hover ul{ left:0 !important;}
 }
+
+@media screen and (min-width: 1300px) {
+	body.home .container {
+		width: 100%;
+	}
+	body.home .header .container{width: 1170px;}
+}

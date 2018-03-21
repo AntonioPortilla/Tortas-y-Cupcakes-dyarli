@@ -59,10 +59,15 @@ ol.comment-list li{ list-style:none; margin-bottom:5px;}
 .toggle a{ color:#ffffff; background:url(images/mobile_nav_right.png) no-repeat right center #ff8a00; padding:10px 10px; margin-top:5px; font-size:16px; text-align:left;}
 .toggle a:hover{color:#ffffff !important;}
 .sitenav{display:none;}
-.sitenav{ padding:0; text-align:right; float:right;}
-.sitenav ul { float:right; margin:0; padding:0; font-family:'Caveat', sans-serif; font-weight:400; font-size:22px;}
+.sitenav{
+	padding:0;
+	text-align: center;
+    float: left;
+    width: 100%;}
+.sitenav ul { float:none; margin:0; padding:0; font-family:'Caveat', sans-serif; font-weight:400; font-size:22px;}
 .sitenav ul li{ display:inline-block; margin:0; position:relative; text-align:center;}
-.sitenav ul li a{ padding:38px 15px; display:block; color:#111; }
+.sitenav ul li a{ padding:0 15px; display:block; color:#fff; line-height: 150px;}
+.sitenav ul li a:hover{ color:#f2f2f2 !important;}
 .sitenav ul li ul li{display:block; position:relative; float:none; top:-1px; border-bottom:1px solid #ccc;}
 .sitenav ul li ul li a{display:block; padding-top:10px; padding-bottom:10px; position:relative; top:1px; text-align:left;  }
 .sitenav ul li a:hover, .sitenav ul li.current_page_item a{ color:#ff8a00; }
@@ -75,14 +80,53 @@ ol.comment-list li{ list-style:none; margin-bottom:5px;}
 
 /* = header top sign in  css
 -------------------------------------------------------------- */
-.header{width:100%; z-index:999;}
+.header{width:100%; z-index:999;max-height: 150px;background: #F7578E;}
 .innerheader{position:relative; }
-
-.logo{float:left; z-index:99; padding:20px 0;  color:#111; width:20%;}
+.home_slider_main .nivo-directionNav {
+	display: none;
+}
+.home_slider_main .nivo-caption {
+	z-index: 999;
+}
+.home_slider_main .nivo-caption h2 {
+	color: #fff;
+	font: 700 42px 'Open Sans';
+	text-transform: none;
+}
+.home_slider_main .nivo-caption p {
+	color: #fff;
+	font: 300 16px 'Open Sans';
+}
+.home_slider_main .gradient {
+	background: linear-gradient(rgba(128,60,13,.6) 99%,#803C0D);
+	bottom: 0;
+	display: block;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00803C0D',endColorstr='#803C0D',GradientType=0);
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+.logo{
+	float:left; z-index:99; 
+	color:#111; width:20%;
+	position: relative;
+	padding: 0;
+	height: 150px;
+    }
 .logo h1{font-weight:600; margin:0; line-height:34px; color:#111; text-transform:uppercase; font-size:34px; letter-spacing:5px;}
 .logo h1 span{ color:#ff8a00;}
 .logo a{ color:#111;}
-.header_right{ float:right; text-align:right; width:80%; color:#fff;}
+.header_right{ float:left; text-align:center; width:60%; color:#fff;}
+.header .social-icons {
+	width: 20%;
+	float: left;
+	text-align: center;
+	line-height: 150px;
+	margin-bottom: 0;
+}
 section#home_slider{ padding:0;}
 #FrontBlogPost, #wrapfirst, #wrapsecond{ padding:70px 0;}
 h2.section-title {color:#454545; font:400 28px/32px 'Caveat',san-serif; text-align: center; border-bottom:1px solid #eee; padding-bottom:20px; margin:0 auto 40px; display:table; }
@@ -128,7 +172,7 @@ a.ReadMore:hover{ background-color:#333; color:#fff; }
 .blog_lists h3 a:hover{ color:#ff8a00;}
 .blog_lists p{ margin-bottom:30px;}
 .blog-meta{ font-style:italic; margin-bottom:8px;}
-.post-date, .post-comment, .post-categories{ display:inline; color:#000000;} 
+.post-date, .post-comment, .post-categories{ display:inline; color:#000000;}
 .single_title{ margin-bottom:5px;}
 .BlogPosts{ width:31.2%; float:left; margin:0 3% 0 0;}
 .BlogPosts img{ width:100%;}
@@ -184,9 +228,22 @@ div.recent-post p{ line-height:16px; margin:0;}
 /* = social icons css
 -------------------------------------------------------------- */
 .social-icons{ margin-bottom:15px;}
-.social-icons a{ background-color:#2a2a2a !important; width:32px; height:32px; line-height:32px; text-align:center;  vertical-align:middle; display:inline-block; transition:0.6s; -moz-transition:0.6s; -webkit-transition:0.6s; -o-transition:0.6s;  margin:0 8px 0 0; padding:0; border-radius:5px; }
+.social-icons a{
+	width:32px; height:32px;
+	line-height:32px; text-align:center;
+	vertical-align:middle;
+	display:inline-block;
+	transition:0.6s;
+	-moz-transition:0.6s;
+	-webkit-transition:0.6s;
+	-o-transition:0.6s;
+	margin:0 8px 0 0;
+	padding:0;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
 
-.social-icons a:hover{ background-color:#ff8a00 !important;}
+.social-icons a:hover{ background-color:#803C0D !important; border-color: #803C0D;}
 .social-icons br{ display:none;}
 .social-icons .fb{ background:url(images/icon-fb.png) no-repeat center center; }
 .social-icons .tw{ background:url(images/icon-tw.png) no-repeat center center; }
@@ -225,7 +282,7 @@ h1.product_title, p.price{ margin-bottom:10px;}
 .wpcf7{ margin:30px 0 0; padding:0;}
 .wpcf7 input[type="text"], .wpcf7 input[type="tel"], .wpcf7 input[type="email"]{ width:40%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:35px; padding:0 15px; color:#797979; margin-bottom:0;}
 .wpcf7 textarea{width:60%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:150px; color:#797979; margin-bottom:25px; font:12px arial; padding:10px; padding-right:0;}
-.wpcf7 input[type="submit"]{background-color:#ff8a00; width:auto; border:none; cursor:pointer; font:18px 'Caveat',san-serif; color:#ffffff; padding:10px 40px; border-radius:3px;}	
+.wpcf7 input[type="submit"]{background-color:#ff8a00; width:auto; border:none; cursor:pointer; font:18px 'Caveat',san-serif; color:#ffffff; padding:10px 40px; border-radius:3px;}
 
 /* ============= Comment Form ============ */
 h1.screen-reader-text{font:22px 'Caveat',san-serif;}
@@ -270,7 +327,7 @@ fieldset{border:0; margin:0.2em 0.1em; padding:0.4em;}
 .form_row{font-weight:bold; font-size:104%;}
 .cancel-comment-reply{font-variant:small-caps; font-size:90%; padding-top:0; margin-top:0;}
 .search-submit{display: inherit !important; float: right; margin-top: -2px; padding: 4px 12px}
-.search-field{display: inherit !important; height: 30px; padding: 5px; width: 70%;} 
+.search-field{display: inherit !important; height: 30px; padding: 5px; width: 70%;}
 .blog-post .search-field{width:88%;}
 aside select{width:100%; height:25px;}
 #sidebar table{width:100%;}
@@ -287,7 +344,7 @@ dl dd{margin:2px 0; padding:5px 0;}
 abbr{border:none; color:#05f; cursor:help;}
 q{display: inline;}
 q:before{content: open-quote;}
-q:after{content: close-quote;} 
+q:after{content: close-quote;}
 .bypostauthor {}
 .topspace{padding-top:125px;}
 .topspacesingle{padding-top:40px;}

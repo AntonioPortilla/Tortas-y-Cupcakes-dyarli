@@ -91,9 +91,8 @@
         </div>-->
         <div class="copyright-wrapper">
         	<div class="container">
-
               	 <div class="social-icons">
-					<?php if ( get_theme_mod('fb_link') !== "") { ?>
+					         <?php if ( get_theme_mod('fb_link') !== "") { ?>
                     <a title="facebook" class="fb" target="_blank" href="<?php echo esc_url(get_theme_mod('fb_link','#facebook')); ?>"></a>
                     <?php } ?>
 
