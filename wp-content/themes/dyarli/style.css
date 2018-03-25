@@ -445,3 +445,10 @@ h2.section-title .line-h {
 	left: 0;
 	bottom: -2px;
 }
+.logo-dyarli a {
+	background: url(images/logo-dyarli.svg) center no-repeat;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin-left: 5px;
+}

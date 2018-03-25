@@ -25,9 +25,11 @@
         <div class="container">
 			<div class="logo">
 				<div class="logo-dyarli">
-					<?php shudh_the_custom_logo(); ?>
-					<a href="<?php echo esc_url( home_url('/') ); ?>"><h1><?php bloginfo('name'); ?></h1>
-					<p><?php bloginfo('description'); ?></p></a>
+					<!--<?php //shudh_the_custom_logo(); ?>
+					<h1><?php //bloginfo('name'); ?></h1> -->
+					<a href="<?php echo esc_url( home_url('/') ); ?>">
+					<!--<p><?php //bloginfo('description'); ?></p>-->
+					</a>
 				</div>
 			</div>
 			<div class="header_right">
