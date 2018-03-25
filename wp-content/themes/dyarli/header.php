@@ -75,7 +75,7 @@
     }
 ?>
 <?php if(!empty($id_arr)){ ?>
-<div class="container">
+<div class="container content-slider">
 <section id="home_slider" class="home_slider_main">
 	<div class="slider-wrapper theme-default">
 		<div id="slider" class="nivoSlider">

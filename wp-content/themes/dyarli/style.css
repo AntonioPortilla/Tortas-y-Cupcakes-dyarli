@@ -1,9 +1,9 @@
 /*
-Theme Name: Shudh
+Theme Name: Dyarli
 Theme URI: http://www.sktthemes.net/shop/free-minimal-wordpress-theme
-Author: SKT Themes
-Author URI: http://www.sktthemes.net
-Description: Shudh is a minimal, dynamic responsive WordPress theme which suits minimalistic, commercial, corporate, eCommerce, business, startups, agencies, consulting, style, fashion, portfolio, photographer, personal, landing page, widget friendly, shortcode friendly, page builder friendly, elegant, with powerful features. Finance, law, Blogging, discussion, news and other types of sites also can be created using this template. Translation ready, multilingual, SEO ready as well as compatible with contact form, gallery and other plugins like WooCommerce. Check demo at: http://sktthemesdemo.net/shudh/
+Author: Intuyes
+Author URI: http://www.intuyes.com
+Description: Somos una Agencia Creativa de Publicidad que tiene como principal objetivo gestionar y comunicar las marcas de nuestros clientes; para lograr esto es fundamental involucrarnos totalmente con la marca y conocer a fondo al público objetivo. Contamos con un equipo especializado en nuevas tecnologías, brindando la mejor solución para su empresa.
 
 Version: 1.1
 License: GNU General Public License
@@ -370,6 +370,9 @@ body.home .section-home {
 }
 body.home .int-cate{
 	overflow: unset;
+}
+body.home .int-cate:hover h3{
+	color: #F7578E;
 }
 body.home .int-cate h3{
 	position: absolute;
